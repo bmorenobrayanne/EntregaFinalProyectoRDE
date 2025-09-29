@@ -17,6 +17,8 @@ class PhotoAdapter(private var photos: List<PhotoEntity>) :
         val imageView: ImageView = itemView.findViewById(R.id.imageViewPhoto)
         val textViewCoords: TextView = itemView.findViewById(R.id.textViewCoords)
         val textViewDateTime: TextView = itemView.findViewById(R.id.textViewDateTime)
+
+        val textViewPosition: TextView = itemView.findViewById(R.id.textViewPosition)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PhotoViewHolder {
@@ -27,6 +29,7 @@ class PhotoAdapter(private var photos: List<PhotoEntity>) :
 
     override fun onBindViewHolder(holder: PhotoViewHolder, position: Int) {
         val photo = photos[position]
+        holder.textViewPosition.text = "(${photo.id})"
         holder.imageView.setImageURI(Uri.parse(photo.uri))
         holder.textViewCoords.text = "Lat: ${photo.latitude}, Lon: ${photo.longitude}"
         holder.textViewDateTime.text = photo.dateTime

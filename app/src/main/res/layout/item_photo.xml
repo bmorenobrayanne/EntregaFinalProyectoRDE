@@ -2,27 +2,46 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="vertical"
+    android:orientation="horizontal"
     android:padding="8dp">
 
+    <!-- Imagen a la izquierda -->
     <ImageView
         android:id="@+id/imageViewPhoto"
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
         android:scaleType="centerCrop"
-        android:contentDescription="Foto tomada" />
+        android:contentDescription="Foto tomada"
+        android:layout_marginEnd="8dp" />
 
-    <TextView
-        android:id="@+id/textViewCoords"
-        android:layout_width="match_parent"
+    <!-- Información a la derecha en columna -->
+    <LinearLayout
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Lat/Lon"
-        android:paddingTop="4dp" />
+        android:orientation="vertical"
+        android:layout_weight="1">
 
-    <TextView
-        android:id="@+id/textViewDateTime"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Fecha/Hora"
-        android:paddingTop="2dp" />
+        <TextView
+            android:id="@+id/textViewPosition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Posición"
+            android:textStyle="bold"
+            android:paddingBottom="4dp" />
+
+        <TextView
+            android:id="@+id/textViewCoords"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lat/Lon"
+            android:paddingBottom="4dp" />
+
+        <TextView
+            android:id="@+id/textViewDateTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fecha/Hora" />
+
+    </LinearLayout>
+
 </LinearLayout>
