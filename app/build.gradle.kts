@@ -48,14 +48,14 @@ dependencies {
     androidTestImplementation(libs.androidx.espresso.core)
 
     // 🔹 Room
-    implementation("androidx.room:room-runtime:2.8.1")
-    kapt("androidx.room:room-compiler:2.6.1")
+    implementation(libs.androidx.room.runtime)
+    kapt(libs.androidx.room.compiler)
 
     // 🔹 Lifecycle (ViewModel + LiveData)
-    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.9.4")
-    implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.9.4")
-    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.9.4")
+    implementation(libs.androidx.lifecycle.viewmodel.ktx)
+    implementation(libs.androidx.lifecycle.livedata.ktx)
+    implementation(libs.androidx.lifecycle.runtime.ktx)
 
     // 🔹 Play Services Location
-    implementation("com.google.android.gms:play-services-location:22.3.0")
+    implementation(libs.play.services.location.v2130)
 }
