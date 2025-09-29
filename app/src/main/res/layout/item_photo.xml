@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <ImageView
+        android:id="@+id/imageViewPhoto"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:contentDescription="Foto tomada" />
+
+    <TextView
+        android:id="@+id/textViewCoords"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lat/Lon"
+        android:paddingTop="4dp" />
+
+    <TextView
+        android:id="@+id/textViewDateTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fecha/Hora"
+        android:paddingTop="2dp" />
+</LinearLayout>
