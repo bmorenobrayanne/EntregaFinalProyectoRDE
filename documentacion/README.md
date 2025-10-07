@@ -6,5 +6,5 @@ Este directorio contiene toda la documentación técnica y de diseño del proyec
 
 ## 📂 Estructura de la carpeta
 
-- 🧠 **[Informe técnico final](InformeTecnicoFinal/documentoInforme.docx)**
+- 🧠 **[Informe técnico final](InformeTecnicoFinal)**
 - 🧩 **[Diagramas](diagramas)**
