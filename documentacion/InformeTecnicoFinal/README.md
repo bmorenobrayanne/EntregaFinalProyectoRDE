@@ -149,7 +149,7 @@ Desarrollar una aplicación móvil interactiva que integre inteligencia artifici
 ## 🧱 Modelado Estructural
 
 ### Diagrama de Clases (UML)
-![Diagrama de Clases](../diagramas/mi_diagramadeclases.png)
+![Diagrama de Clases](../diagramas/my_diagramadeclases.png)
 
 
 ### Otros Diagramas
@@ -160,7 +160,7 @@ Desarrollar una aplicación móvil interactiva que integre inteligencia artifici
 ---
 
 ## 🔁 Modelado de Comportamiento
-- Diagramas de Casos de Uso
+![Diagrama de casos de uso](../diagramas/my_diagramaclasesdeuso.png)
 - Diagrama de Actividad
 - Diagrama de Estado
 - Diagrama de Secuencia
